@@ -4,53 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
-    <link rel="stylesheet" href"styles.css">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: url("images/background.jpg");
-        }
-        div {
-            border: 10px solid black;
-            margin:auto;
-            margin-top: 250px;
-            width: 30%;
-            text-align:center;
-            border-radius: 70px;
-            background-image: url("images/background2.jpg");
-            }
-        h1 {
-            font-weight: 900;
-        }
-        h2 {
-            font-weight: 800;
-        }
-        .css-emoji {
-            height: 70px;
-        }
-        button {
-            background-color: transparent;
-            border-radius:50%;
-            border:6px solid black;
-            margin:22px;
-            width: 100px;
-            cursor: pointer;
-            
-        }
-
-
-
-
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <div>
         <h1>Rock-Paper-Scissors</h1>
         <h2>Try your Luck!</h2>
-        <button class"rock"><img src="images/rock-emoji.png" class="css-emoji" alt="rock"></button>
-        <button class"paper"><img src="images/paper-emoji.png" class="css-emoji" alt="paper"></button>
-        <button class"scissors"><img src="images/scissors-emoji.png" class="css-emoji" alt="scissros"></button>
+        <button onclick="evaluateGame('rock')"><img src="images/rock-emoji.png" class="css-emoji" alt="rock"></button>
+        <button onclick="evaluateGame('paper')"><img src="images/paper-emoji.png" class="css-emoji" alt="paper"></button>
+        <button onclick="evaluateGame('scissors')"><img src="images/scissors-emoji.png" class="css-emoji" alt="scissros"></button>
 
         <h2 class="result">You won!</h2>
         <h3 class="detailed-result">Comp choosed rock you choosed scissors</h3>
@@ -59,7 +22,7 @@
 
     </div>
 
-    <script src="main.js"></script>
+    <script src="rock-paper-scissors.js"></script>
     
 </body>
 </html>
