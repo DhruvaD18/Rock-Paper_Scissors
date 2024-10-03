@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock-Paper-Scissors</title>
+    <title>Rock-Paper-Scissors Game</title>
     <link rel="stylesheet" href="styles.css">
-    
 </head>
 <body>
-    <div>
+    <div class="game-container">
         <h1>Rock-Paper-Scissors</h1>
         <h2>Try your Luck!</h2>
-        <button onclick="evaluateGame('rock')"><img src="images/rock-emoji.png" class="css-emoji" alt="rock"></button>
-        <button onclick="evaluateGame('paper')"><img src="images/paper-emoji.png" class="css-emoji" alt="paper"></button>
-        <button onclick="evaluateGame('scissors')"><img src="images/scissors-emoji.png" class="css-emoji" alt="scissros"></button>
-
-        <h2 class="result">You won!</h2>
-        <h3 class="detailed-result">Comp choosed rock you choosed scissors</h3>
-        <h2 class="score">Won = 4, Lost = 3, Tie = 3</h2>
-
-
+        
+        <div class="choices">
+            <button id="rock" class="choice">
+                <img src="images/rock-emoji.png" alt="Rock" class="css-emoji">
+            </button>
+            <button id="paper" class="choice">
+                <img src="images/paper-emoji.png" alt="Paper" class="css-emoji">
+            </button>
+            <button id="scissors" class="choice">
+                <img src="images/scissors-emoji.png" alt="Scissors" class="css-emoji">
+            </button>
+        </div>
+        
+        <h2 id="result" class="result">Make your choice!</h2>
+        <p id="detailed-result" class="detailed-result"></p>
+        <p id="score" class="score">Won = 0, Lost = 0, Tie = 0</p>
+        
+        <button id="reset" class="reset-button">Reset Game</button>
     </div>
-
     <script src="rock-paper-scissors.js"></script>
-    
 </body>
 </html>
